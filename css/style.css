@@ -2659,10 +2659,10 @@ input[type="checkbox"] ~ div {
   padding: 5px 0;
 }
 .jobs_card_top_bar ul li h3 {
-  font-size: 22px;
+  font-size: 18px !important;
 }
 .jobs_card_top_bar ul li p {
-  font-size: 22px;
+  font-size: 12px !important;
 }
 .jobs_card_top_bar ul li.active {
   border-bottom: 2px solid var(--primary-color);
