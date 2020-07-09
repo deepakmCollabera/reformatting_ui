@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M37.5,2 C56.0015391,2 71,16.9984609 71,35.5 C71,54.0015391 56.0015391,69 37.5,69 C18.9984609,69 4,54.0015391 4,35.5 C4,16.9984609 18.9984609,2 37.5,2 Z M31.7804878,21.6097561 L31.7804878,49.3902439 L49.7560976,35.5 L31.7804878,21.6097561 Z" id="path-1"></path>
+        <filter x="-10.4%" y="-7.5%" width="120.9%" height="120.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.132648601 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Amit-Revised-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.913876488">
+        <g id="Candidate_Web_My-Jobs_Shortlist_1" transform="translate(-1180.000000, -458.000000)">
+            <g id="Group-14" transform="translate(1180.000000, 458.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
