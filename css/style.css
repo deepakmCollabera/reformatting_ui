@@ -24,7 +24,26 @@
 }
 :root {
   --primary-color: #0a7be0;
+  --current-width : ;
 }
+
+/* newly adding dynamic css */
+.side_space{
+  padding: 0 calc((var(--current-width) * 2)/100);
+}
+.padding_lr_1{
+  padding: 0 calc((var(--current-width) * 1)/100);
+}
+.padding_1{
+  padding: calc((var(--current-width) * 1)/100);
+}
+.padding_tb_1{
+  padding: calc((var(--current-width) * 1)/100) 0;
+}
+.margin_b_1{
+  margin-bottom: calc((var(--current-width) * 1)/100);
+}
+/* newly adding dynamic css */
 
 body {
   font-family: "Gotham-Book" !important;
@@ -42,67 +61,67 @@ input[type="checkbox"] ~ div {
 }
 .text_book_16 {
   font-family: "Gotham-Book" !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   color: #232333 !important;
 }
 .text_book_14 {
   font-family: "Gotham-Book" !important;
-  font-size: 14px !important;
+  font-size: .9rem !important;
   color: #232333 !important;
 }
 .text_bold_18 {
   font-family: "Gotham-Bold" !important;
-  font-size: 18px !important;
+  font-size: 1.1rem !important;
   color: #232333 !important;
 }
 .text_bold_16 {
   font-family: "Gotham-Bold" !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   color: #232333 !important;
 }
 .text_medium_16 {
   font-family: "Gotham-Medium" !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   color: #232333 !important;
 }
 .text_bold_14 {
   font-family: "Gotham-Bold" !important;
-  font-size: 14px !important;
+  font-size: .9rem !important;
   color: #232333 !important;
 }
 .text_medium_14 {
   font-family: "Gotham-Medium" !important;
-  font-size: 14px !important;
+  font-size: .9rem !important;
   color: #232333 !important;
 }
 .text_book_12 {
   font-family: "Gotham-Book" !important;
-  font-size: 12px !important;
+  font-size: .8rem !important;
   color: #232333 !important;
 }
 .text_medium_12 {
   font-family: "Gotham-Medium" !important;
-  font-size: 12px !important;
+  font-size: .8rem !important;
 }
 .text_medium_10 {
   font-family: "Gotham-Medium" !important;
-  font-size: 10px !important;
+  font-size: .6rem !important;
   color: #515468 !important;
 }
 .text_book_10 {
   font-family: "Gotham-Book" !important;
-  font-size: 10px !important;
+  font-size: .6rem !important;
   color: #515468 !important;
 }
 .text_book_9 {
-  font-size: 9px;
+  font-size: .5rem;
   display: block;
   margin-top: 0px;
   color: #515468;
   word-break: break-all;
 }
 .text_book_8 {
-  font-size: 8px;
+  font-size: .4rem;
   display: block;
   margin-top: 2px;
   color: #acaec1;
@@ -146,13 +165,13 @@ input[type="checkbox"] ~ div {
 }
 .navbar .bigscr {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: .6rem 1.2rem;
   border: 1px solid #e1e1e1;
-  height: 73px;
+  height: 4.5rem;
 }
 .bigscr {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   vertical-align: middle;
@@ -163,11 +182,8 @@ input[type="checkbox"] ~ div {
 .pl-custom-4 {
   padding-left: 2rem !important;
 }
-.navbar-brand img {
-  max-height: 30px;
-}
 #navbarNavDropdown ul li {
-  margin: 0 10px;
+  margin: 0 .5rem;
 }
 .profile_menu {
   box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.33);
@@ -221,10 +237,10 @@ input[type="checkbox"] ~ div {
   border: none;
   color: #fff;
   font-family: "Gotham-Bold";
-  padding: 8px 40px;
+  padding: .5rem 2.4rem;
   width: 100%;
-  margin: 20px 0 10px;
-  font-size: 14px;
+  margin: 1.2rem 0 .6rem;
+  font-size: .9rem;
   letter-spacing: 0.2px;
   border-radius: 2px;
 }
@@ -336,11 +352,11 @@ input[type="checkbox"] ~ div {
   left: 6%;
 }
 .navbar-brand img {
-  max-height: 30px;
+  max-height: 1.9rem;
 }
 .bigscr {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   vertical-align: middle;
@@ -691,6 +707,7 @@ input[type="checkbox"] ~ div {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   margin-top: 20px;
+  padding: calc((var(--current-width) * 1.5)/100);
 }
 .quick_individual span {
   color: #0db5eb;
@@ -735,7 +752,7 @@ input[type="checkbox"] ~ div {
   width: 100%;
 }
 .tab_and_search_wrap .nav .nav-item {
-  margin-right: 20px;
+  margin-right: 1.2rem;
   color: #232333ab;
 }
 .tab_and_search_wrap .nav .nav-item.active {
@@ -749,8 +766,8 @@ input[type="checkbox"] ~ div {
 }
 .search_wraptop input {
   width: 100%;
-  font-size: 12px;
-  padding: 5px 10px 5px 30px;
+  font-size: .7rem;
+  padding: .3rem .6rem .3rem 1.8rem;;
   outline: none;
   border-radius: 2px;
   border: solid 1px #efefef;
@@ -760,22 +777,22 @@ input[type="checkbox"] ~ div {
   content: url(../images/search_icon.svg);
   position: absolute;
   left: 10px;
-  top: 5px;
+  top: 2px;
 }
 .tab_content_form {
   background-color: #ecf0f4;
-  padding: 14px 16px 16px;
+  padding: calc((var(--current-width) * 1)/100);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
   z-index: 9999;
   margin-bottom: 5px;
 }
 .tab_content_form .form_group input {
-  font-size: 12px;
+  font-size: .7rem;
   border-radius: 1px;
   border: solid 1px #efefef;
   background-color: #ffffff;
   outline: none;
-  padding: 4px 6px;
+  padding: .3rem .4rem;
 }
 .form_checkbox {
   width: 16px;
@@ -805,6 +822,7 @@ input[type="checkbox"] ~ div {
   box-shadow: 0 0 10px 0 rgba(224, 226, 228, 0.42);
   border: solid 1px #eaeaea;
   background-color: #ffffff;
+  padding: calc((var(--current-width) * 1.5)/100);
 }
 .search_jobs_wrap .btn_primary {
   font-family: "Gotham-Book";
@@ -813,19 +831,19 @@ input[type="checkbox"] ~ div {
   border-radius: 1px;
   border: solid 1px #f6f6f6;
   background-color: #f4f7fa;
-  padding: 5px 10px;
+  padding: .3rem .6rem;
   outline: none;
-  font-size: 14px;
+  font-size: .8rem;
   color: #232333;
 }
 .search_jobs_wrap .form_group label {
   color: #4a4a4a;
-  font-size: 12px;
+  font-size: .7rem;
   margin: 0;
 }
 .search_jobs_wrap .link_style {
   margin-left: auto;
-  font-size: 12px;
+  font-size: .7rem;
   color: #747588;
   border-bottom: 1px solid #747588;
 }
@@ -834,6 +852,7 @@ input[type="checkbox"] ~ div {
 .candidate_cards_wrap {
   max-height: 73vh;
   overflow-y: auto;
+  padding: calc((var(--current-width) * 1)/100) 0;
 }
 .candidate_card {
   border-radius: 2px;
@@ -1114,7 +1133,6 @@ input[type="checkbox"] ~ div {
   z-index: 99;
   width: 200px;
   left: -20px;
-  padding: 20px;
 }
 .info_card_wrap::after {
   width: 0;
@@ -1533,8 +1551,8 @@ input[type="checkbox"] ~ div {
 }
 .matching_jobs_container .list_cards_wrap .list_cards .btn_secondary,
 .matching_jobs_container .list_cards_wrap .list_cards .btn_primary {
-  padding: 4px 12px;
-  font-size: 12px;
+  padding: .3rem .7rem;
+  font-size: .7rem;
   outline: none;
 }
 .matching_job_wrap {
@@ -1727,7 +1745,7 @@ input[type="checkbox"] ~ div {
   text-transform: capitalize;
 }
 .main_container {
-  padding-top: 72px;
+  padding-top: 4.5rem;
   box-shadow: 0px -5px 23px 0px #e1e1e1;
   border: 1px solid #e1e1e1;
   background-color: #fcfcff;
@@ -2068,7 +2086,7 @@ input[type="checkbox"] ~ div {
   border: none !important;
 }
 .modal .search_wraptop input {
-  padding: 10px 10px 10px 30px;
+  padding: .3rem .6rem .6rem 1.8rem;
 }
 .modal .search_wraptop::before {
   top: 10px;
@@ -2659,10 +2677,10 @@ input[type="checkbox"] ~ div {
   padding: 5px 0;
 }
 .jobs_card_top_bar ul li h3 {
-  font-size: 18px !important;
+  font-size: 22px;
 }
 .jobs_card_top_bar ul li p {
-  font-size: 12px !important;
+  font-size: 22px;
 }
 .jobs_card_top_bar ul li.active {
   border-bottom: 2px solid var(--primary-color);
