@@ -43,6 +43,39 @@
 .margin_b_1{
   margin-bottom: calc((var(--current-width) * 1)/100);
 }
+div * {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  background-color: transparent;
+}
+div::-webkit-scrollbar {
+  width: 3px !important;
+  background-color: transparent;
+}
+div::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+div{
+  scrollbar-width: thin; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  background-color: transparent !important;
+}
+::-webkit-scrollbar {
+  width: 6px !important;
+  background-color: transparent;
+}
+.activeScroll::-webkit-scrollbar-thumb {
+  background-color: #acacac !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
 /* newly adding dynamic css */
 
 body {
@@ -1027,13 +1060,13 @@ input[type="checkbox"] ~ div {
 
 /* progress */
 .radial-progress {
-  width: 50px;
-  height: 50px;
+  width: calc((var(--current-width) * 3.5)/100);
+  height: calc((var(--current-width) * 3.5)/100);
   background-color: #b1b1b1;
   border-radius: 50%;
 }
 .radial-progress .circle .mask {
-  clip: rect(0px, 50px, 50px, 25px);
+  clip: rect(0px, calc((var(--current-width) * 3.5)/100), calc((var(--current-width) * 3.5)/100), calc((var(--current-width) * 1.75)/100));
 }
 .radial-progress .circle .mask,
 .radial-progress .circle .fill {
@@ -1046,29 +1079,29 @@ input[type="checkbox"] ~ div {
 .radial-progress .circle .mask,
 .radial-progress .circle .fill,
 .radial-progress .circle .shadow {
-  width: 50px;
-  height: 50px;
+  width: calc((var(--current-width) * 3.5)/100);
+  height: calc((var(--current-width) * 3.5)/100);
   position: absolute;
   border-radius: 50%;
 }
 .radial-progress .circle .mask .fill {
-  clip: rect(0px, 25px, 50px, 0px);
+  clip: rect(0px, calc((var(--current-width) * 1.75)/100), calc((var(--current-width) * 3.5)/100), 0px);
   background-color: #23cc57;
 }
 .radial-progress .circle .mask,
 .radial-progress .circle .fill,
 .radial-progress .circle .shadow {
-  width: 50px;
-  height: 50px;
+  width: calc((var(--current-width) * 3.5)/100);
+  height: calc((var(--current-width) * 3.5)/100);
   position: absolute;
   border-radius: 50%;
 }
 .radial-progress .inset {
-  width: 44px;
-  height: 44px;
+  width: calc((var(--current-width) * 3.1)/100);
+  height: calc((var(--current-width) * 3.1)/100);
   position: absolute;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: calc((var(--current-width) * 0.2)/100);
+  margin-top: calc((var(--current-width) * 0.2)/100);
   border-radius: 50%;
 }
 /* progress */
