@@ -357,61 +357,68 @@
   <div class="main_container bigscr dashboard_container">
     <div class="col-lg-12 side_space">
       <div class="row">
-        <div class="col-lg-3 padding_lr_1">
-          <div class="quick_overview_wrap">
-            <h4 class="text_medium_14">Quick Overview</h4>
-            <div class="quick_individual text_medium_14 color_light_grey pt-3">
-              <span class="left_bar"></span>
-              Shortlist
-              <span class="ml-auto">23</span>
+        <div class="col-md-12 col-xl-3 padding_lr_1">
+          <div class="row m-0">
+            <div class="col-lg-6 col-xl-12 pr-3">
+              <div class="quick_overview_wrap ">
+                <h4 class="text_medium_14">Quick Overview</h4>
+                <div class="quick_individual text_medium_14 color_light_grey pt-3">
+                  <span class="left_bar"></span>
+                  Shortlist
+                  <span class="ml-auto">23</span>
+                </div>
+                <div class="quick_individual text_medium_14 color_light_grey yellow_wrap pt-3">
+                  <span class="left_bar"></span>
+                  Interview
+                  <span class="ml-auto">12</span>
+                </div>
+                <div class="quick_individual text_medium_14 color_light_grey orange_wrap pt-3">
+                  <span class="left_bar"></span>
+                  Finalist
+                  <span class="ml-auto">2</span>
+                </div>
+                <div class="quick_individual text_medium_14 color_light_grey green_wrap pb-0 pt-3 border-0">
+                  <span class="left_bar"></span>
+                  Hire
+                  <span class="ml-auto">4</span>
+                </div>
+              </div>
             </div>
-            <div class="quick_individual text_medium_14 color_light_grey yellow_wrap pt-3">
-              <span class="left_bar"></span>
-              Interview
-              <span class="ml-auto">12</span>
-            </div>
-            <div class="quick_individual text_medium_14 color_light_grey orange_wrap pt-3">
-              <span class="left_bar"></span>
-              Finalist
-              <span class="ml-auto">2</span>
-            </div>
-            <div class="quick_individual text_medium_14 color_light_grey green_wrap pb-0 pt-3 border-0">
-              <span class="left_bar"></span>
-              Hire
-              <span class="ml-auto">4</span>
-            </div>
-          </div>
-          <div class="search_jobs_wrap mt-4">
-            <div class="row m-0">
-              <h4 class="text_medium_14 m-0">Search Jobs</h4>
-              <a href="#" class="link_style">Advanced Search</a>
+            <div class="mt-4 col-lg-6 col-xl-12 pl-3">
+              <div class="search_jobs_wrap ">
+                <div class="row m-0">
+                  <h4 class="text_medium_14 m-0">Search Jobs</h4>
+                  <a href="#" class="link_style">Advanced Search</a>
+                </div>
+                <div class="search_form pt-3 text-center">
+                  <form action="">
+                    <div class="form_input mb-3">
+                      <label for="what_input" class="text_medium_14 color_light_grey float-left">What</label>
+                      <input type="text" placeholder="ex: Java" id="what_input" class="w-100">
+                    </div>
+                    <div class="form_input mb-3">
+                      <label for="where_input" class="text_medium_14 color_light_grey float-left">Where</label>
+                      <input type="text" placeholder="ex: Manhattan, NY" id="where_input" class="w-100">
+                    </div>
+                    <div class="form_input form_group text-right form_check d-flex align-items-center">
+                      <input type="checkbox" placeholder="ex: Manhattan, NY" id="all_loc_check" checked class="d-none">
+                      <div class="form_checkbox mr-1 ml-auto"></div>
+                      <label for="all_loc_check">
+                        Search
+                        All US Locations</label>
+                    </div>
+                    <div class="form_input">
+                      <button class="btn_primary">Find Jobs</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
 
-            <div class="search_form pt-3 text-center">
-              <form action="">
-                <div class="form_input mb-3">
-                  <label for="what_input" class="text_medium_14 color_light_grey float-left">What</label>
-                  <input type="text" placeholder="ex: Java" id="what_input" class="w-100">
-                </div>
-                <div class="form_input mb-3">
-                  <label for="where_input" class="text_medium_14 color_light_grey float-left">Where</label>
-                  <input type="text" placeholder="ex: Manhattan, NY" id="where_input" class="w-100">
-                </div>
-                <div class="form_input form_group text-right form_check d-flex align-items-center">
-                  <input type="checkbox" placeholder="ex: Manhattan, NY" id="all_loc_check" checked class="d-none">
-                  <div class="form_checkbox mr-1 ml-auto"></div>
-                  <label for="all_loc_check">
-                    Search
-                    All US Locations</label>
-                </div>
-                <div class="form_input">
-                  <button class="btn_primary">Find Jobs</button>
-                </div>
-              </form>
-            </div>
           </div>
+
         </div>
-        <div class="col-lg-9 padding_lr_1">
+        <div class="col-md-12 col-xl-9 padding_lr_1">
           <div class="tab_and_search_wrap">
             <ul class="nav nav-pills mt-2">
               <li class="nav-item text_book_14 pb-1">My Redeployables(23)</li>
@@ -424,7 +431,63 @@
           </div>
           <div class="tab_content_wrap">
             <div class="tab_content_form">
-              <div class="row m-0">
+              <div class="filters">
+                <div class="fitler_inner pr-2">
+                  <p class="text_medium_10 mb-2 text-uppercase">Project Expiry Range</p>
+                  <div class="d-flex">
+                    <div class="form_group pr-2 d-flex align-items-center">
+                      <label for="from_exp" class="text_book_10 mr-1 mb-0">From</label>
+                      <input type="text" id="from_exp" class="">
+                    </div>
+                    <div class="form_group pr-1 d-flex align-items-center">
+                      <label for="to_group" class="text_book_10 mr-1 mb-0">To</label>
+                      <input type="text" id="to_group" class="">
+                    </div>
+                  </div>
+                </div>
+                <div class="fitler_inner pr-2">
+                  <p class="text_medium_10 mb-2 text-uppercase">Show Only</p>
+                  <div class="d-flex align-items-center">
+                    <div class="form_group d-flex align-items-center">
+                      <input type="checkbox" name="" id="easydeploy" class="d-none">
+                      <div class="form_checkbox mr-1"></div>
+                      <label for="easydeploy" class="text_book_10 mr-1 mb-0">Redeployable</label>
+                    </div>
+                    <div class="form_group d-flex align-items-center px-2">
+                      <input type="checkbox" name="" id="enddate_confmd" class="d-none">
+                      <div class="form_checkbox mr-1"></div>
+                      <label for="enddate_confmd" class="text_book_10 mr-1 mb-0">Non Redeployable</label>
+                    </div>
+                    <div class="form_group d-flex align-items-center px-2">
+                      <input type="checkbox" name="" id="enddateinwk" class="d-none">
+                      <div class="form_checkbox mr-1"></div>
+                      <label for="enddateinwk" class="text_book_10 mr-1 mb-0">End in a Week</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="fitler_inner">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <p class="text_medium_10 mb-2 text-uppercase">Hide</p>
+                      <div class="form_group d-flex align-items-center pt-1">
+                        <input type="checkbox" name="" id="alredyHired" class="d-none">
+                        <div class="form_checkbox mr-1"></div>
+                        <label for="alredyHired" class="text_book_10 mr-1 mb-0">Redeployable Consultants</label>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text_medium_10 mb-2 text-uppercase">Sort By</p>
+                      <div class="form_group line-height-0 pt-1">
+                        <select id="sortby_dep" class="text_book_10">
+                          <option value="Project End Date">Project End Date</option>
+                          <option value="Project Start Date">Project Start Date</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="row m-0">
                 <div class="col-lg-4 pl-0 pr-2">
                   <p class="text_medium_10 mb-2 text-uppercase">Project Expiry Range</p>
                   <div class="row m-0">
@@ -479,7 +542,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="candidate_cards_wrap on-scrollbar">
               <div class="candidate_card margin_b_1 position-relative">
@@ -1401,6 +1464,9 @@
       </div>
     </div>
   </div>
+  <div class="lowerscreen">
+    <h4>We recommend to use higher resolution device to acceess this page.</h4>
+  </div>
 </body>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
@@ -1476,10 +1542,10 @@
   handleScroll = (e) => {
     if (e.target.classList.contains("activeScroll") === false) {
       e.target.classList.add("activeScroll");
-    }else{
-      setTimeout(function(){
+    } else {
+      setTimeout(function () {
         e.target.classList.remove("activeScroll");
-      },1000)
+      }, 1000)
     }
   }
   window.addEventListener('scroll', this.handleScroll, true);
