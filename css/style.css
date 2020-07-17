@@ -3009,6 +3009,9 @@ input[type="checkbox"] ~ div {
   .status_check_wrap ~ span{
     font-size: .53rem !important;
   }
+  .search_jobs_list_wrap li > span{
+    font-size: .5rem !important;
+  }
 }
 @media(max-width: 1200px){
   .candidate_cards_wrap{
