@@ -3001,7 +3001,7 @@ input[type="checkbox"] ~ div {
   width: 60%;
   margin-bottom: 0;
 }
-@media(max-width: 1251px){
+@media(max-width: 1311px){
   .days_left_wrap, .easy_deploy_wrap, .end_date_wrap{
     padding: .2rem !important;
     font-size: .45rem;
