@@ -76,6 +76,10 @@ div{
 ::-webkit-scrollbar-thumb {
   background-color: transparent !important;
 }
+.fitler_inner .form_group label, .fitler_inner .form_group select{
+  font-family: "Gotham-Book" !important;
+  font-size: calc((var(--current-width) * .7)/100) !important;
+}
 /* newly adding dynamic css */
 
 body {
@@ -94,60 +98,72 @@ input[type="checkbox"] ~ div {
 }
 .text_book_16 {
   font-family: "Gotham-Book" !important;
-  font-size: 1rem !important;
+  /* font-size: 1rem !important; */
+  font-size: calc((var(--current-width) * 1.1)/100) !important;
   color: #232333 !important;
 }
 .text_book_14 {
   font-family: "Gotham-Book" !important;
-  font-size: .9rem !important;
+  /* font-size: .9rem !important; */
+  font-size: calc((var(--current-width) * 1)/100) !important;
   color: #232333 !important;
 }
 .text_bold_18 {
   font-family: "Gotham-Bold" !important;
-  font-size: 1.1rem !important;
+  /* font-size: 1.1rem !important; */
+  font-size: calc((var(--current-width) * 1.2)/100) !important;
   color: #232333 !important;
 }
 .text_bold_16 {
   font-family: "Gotham-Bold" !important;
-  font-size: 1rem !important;
+  /* font-size: 1rem !important; */
+  font-size: calc((var(--current-width) * 1.1)/100) !important;
   color: #232333 !important;
 }
 .text_medium_16 {
   font-family: "Gotham-Medium" !important;
-  font-size: 1rem !important;
+  /* font-size: 1rem !important; */
+  font-size: calc((var(--current-width) * 1.1)/100) !important;
   color: #232333 !important;
 }
 .text_bold_14 {
   font-family: "Gotham-Bold" !important;
-  font-size: .9rem !important;
+  /* font-size: .9rem !important; */
+  font-size: calc((var(--current-width) * 1)/100) !important;
   color: #232333 !important;
 }
 .text_medium_14 {
   font-family: "Gotham-Medium" !important;
-  font-size: .9rem !important;
+  /* font-size: .9rem !important; */
+  font-size: calc((var(--current-width) * 1)/100) !important;
   color: #232333 !important;
 }
 .text_book_12 {
   font-family: "Gotham-Book" !important;
   font-size: .8rem !important;
+  font-size: calc((var(--current-width) * .9)/100) !important;
   color: #232333 !important;
 }
 .text_medium_12 {
   font-family: "Gotham-Medium" !important;
-  font-size: .8rem !important;
+  /* font-size: .8rem !important; */
+  font-size: calc((var(--current-width) * .9)/100) !important;
 }
 .text_medium_10 {
   font-family: "Gotham-Medium" !important;
   font-size: .6rem !important;
+  font-size: calc((var(--current-width) * .8)/100) !important;
   color: #515468 !important;
 }
 .text_book_10 {
   font-family: "Gotham-Book" !important;
   font-size: .6rem !important;
+  font-size: calc((var(--current-width) * .8)/100) !important;
   color: #515468 !important;
 }
 .text_book_9 {
   font-size: .5rem;
+  font-size: calc((var(--current-width) * .7)/100) !important;
   display: block;
   margin-top: 0px;
   color: #515468;
@@ -155,6 +171,7 @@ input[type="checkbox"] ~ div {
 }
 .text_book_8 {
   font-size: .4rem;
+  font-size: calc((var(--current-width) * .6)/100) !important;
   display: block;
   margin-top: 2px;
   color: #acaec1;
@@ -744,7 +761,8 @@ input[type="checkbox"] ~ div {
 }
 .quick_individual span {
   color: #0db5eb;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc((var(--current-width) * 1.4)/100);
   font-family: "Gotham-Medium";
 }
 .quick_individual.yellow_wrap span {
@@ -799,7 +817,7 @@ input[type="checkbox"] ~ div {
 }
 .search_wraptop input {
   width: 100%;
-  font-size: .7rem;
+  font-size: calc((var(--current-width) * .7)/100) !important;
   padding: .3rem .6rem .3rem 1.8rem;;
   outline: none;
   border-radius: 2px;
@@ -900,7 +918,8 @@ input[type="checkbox"] ~ div {
 .days_left_wrap,
 .easy_deploy_wrap,
 .end_date_wrap {
-  font-size: .5rem;
+  /* font-size: .5rem; */
+  font-size: calc((var(--current-width) * .6)/100) !important;
   padding: .2rem .3rem;
   border-radius: 30px;
   margin-right: 4px;
@@ -3001,26 +3020,26 @@ input[type="checkbox"] ~ div {
   width: 60%;
   margin-bottom: 0;
 }
-@media(max-width: 1311px){
+@media(max-width: 1120px){
   .days_left_wrap, .easy_deploy_wrap, .end_date_wrap{
     padding: .2rem !important;
-    font-size: .45rem;
+    font-size: calc((var(--current-width) * .6)/100) !important;
   }
   .status_check_wrap ~ span{
-    font-size: .53rem !important;
+    font-size: calc((var(--current-width) * .6)/100) !important;
   }
   .search_jobs_list_wrap li > span{
-    font-size: .5rem !important;
+    font-size: calc((var(--current-width) * .6)/100) !important;
   }
 }
-@media(max-width: 1200px){
+/* @media(max-width: 1200px){
   .candidate_cards_wrap{
     max-height: 70vh;
   }
   .quick_overview_wrap{
     height: 94%;
   }
-}
+} */
 @media(max-width: 991px){
   .lowerscreen{
     display: block;
