@@ -140,7 +140,7 @@ input[type="checkbox"] ~ div {
 }
 .text_book_12 {
   font-family: "Gotham-Book" !important;
-  font-size: .8rem !important;
+  /* font-size: .8rem !important; */
   font-size: calc((var(--current-width) * .9)/100) !important;
   color: #232333 !important;
 }
@@ -157,12 +157,12 @@ input[type="checkbox"] ~ div {
 }
 .text_book_10 {
   font-family: "Gotham-Book" !important;
-  font-size: .6rem !important;
+  /* font-size: .6rem !important; */
   font-size: calc((var(--current-width) * .8)/100) !important;
   color: #515468 !important;
 }
 .text_book_9 {
-  font-size: .5rem;
+  /* font-size: .5rem; */
   font-size: calc((var(--current-width) * .7)/100) !important;
   display: block;
   margin-top: 0px;
@@ -170,7 +170,7 @@ input[type="checkbox"] ~ div {
   word-break: break-all;
 }
 .text_book_8 {
-  font-size: .4rem;
+  /* font-size: .4rem; */
   font-size: calc((var(--current-width) * .6)/100) !important;
   display: block;
   margin-top: 2px;
@@ -290,7 +290,8 @@ input[type="checkbox"] ~ div {
   padding: .5rem 2.4rem;
   width: 100%;
   margin: 1.2rem 0 .6rem;
-  font-size: .9rem;
+  /* font-size: .9rem; */
+  font-size: calc((var(--current-width) * .8)/100) !important;
   letter-spacing: 0.2px;
   border-radius: 2px;
 }
@@ -857,6 +858,8 @@ input[type="checkbox"] ~ div {
   background-image: url("../images/checked_form.svg");
   width: 16px;
   height: 16px;
+  height: calc((var(--current-width) * 1)/100) !important;
+  width: calc((var(--current-width) * 1)/100) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -884,17 +887,19 @@ input[type="checkbox"] ~ div {
   background-color: #f4f7fa;
   padding: .3rem .6rem;
   outline: none;
-  font-size: .8rem;
+  font-size: calc((var(--current-width) * .9)/100) !important;
   color: #232333;
 }
 .search_jobs_wrap .form_group label {
   color: #4a4a4a;
-  font-size: .7rem;
+  /* font-size: .7rem; */
+  font-size: calc((var(--current-width) * .8)/100) !important;
   margin: 0;
 }
 .search_jobs_wrap .link_style {
   margin-left: auto;
-  font-size: .7rem;
+  /* font-size: .7rem; */
+  font-size: calc((var(--current-width) * .8)/100) !important;
   color: #747588;
   border-bottom: 1px solid #747588;
 }
@@ -911,7 +916,8 @@ input[type="checkbox"] ~ div {
   background-color: #ffffff;
 }
 .end_date_text {
-  font-size: 10px;
+  /* font-size: 10px; */
+  font-size: calc((var(--current-width) * .8)/100) !important;
   font-family: "Gotham-Medium";
   color: #f46861;
 }
